@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Items Trading System</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Game Items Trading System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="items.html">Items</a>
+            <a href="history.html">Purchase History</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Game Items</h2>
+        <input type="text" id="search-input" placeholder="Search for items..." oninput="filterItems()"> <!-- Search bar for filtering items -->
+        <ul class="item-list" id="item-list">
+            <li>
+                <h3>Sword of Destiny</h3>
+                <p>Type: Weapon</p>
+                <p>Price: $50</p>
+                <button type="button" class="btn" onclick="buyItem('Sword of Destiny', 50)">Buy Item</button> <!-- Button to buy the item -->
+            </li>
+            <li>
+                <h3>Shield of Valor</h3>
+                <p>Type: Armor</p>
+                <p>Price: $30</p>
+                <button type="button" class="btn" onclick="buyItem('Shield of Valor', 30)">Buy Item</button>
+            </li>
+            <li>
+                <h3>Health Potion</h3>
+                <p>Type: Consumable</p>
+                <p>Price: $10</p>
+                <button type="button" class="btn" onclick="buyItem('Health Potion', 10)">Buy Item</button>
+            </li>
+            <li>
+                <h3>Magic Ring</h3>
+                <p>Type: Accessory</p>
+                <p>Price: $100</p>
+                <button type="button" class="btn" onclick="buyItem('Magic Ring', 100)">Buy Item</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game Items Trading System</p>
+    </footer>
+    <script src="js/script.js"></script> <!-- Link to JavaScript file for functionality -->
+</body>
+</html>
